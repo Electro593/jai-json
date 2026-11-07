@@ -869,16 +869,16 @@ has_next :: (json: *JSON, count := 1) -> bool {
 #import "Hash_Table";
 #import "Bit_Operations";
 
-#run {
-  JPM :: #import "JPM";
+#if #exists(__JPM__) {
+	JPM :: #import "JPM";
 
-  JPM.declare(.{
-    name    = "JSON",
-    author  = "Electro_593",
-    version = .{ 1, 0, 0 },
+	__JPM_DECLARATION__ :: JPM.Declare_Options.{
+		vendor  = "Electro_593",
+		name    = "JSON",
+		version = .{ 1, 0, 0 },
 
-    license = .UNLICENSE,
-    authors = .["Electro_593"],
-    repo = "https://github.com/Electro593/jai-json"
-  });
+		license = .UNLICENSE,
+		authors = .["Electro_593"],
+		repo = "https://github.com/Electro593/jai-json"
+	};
 }
