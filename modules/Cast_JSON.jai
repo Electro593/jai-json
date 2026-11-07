@@ -942,4 +942,17 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 #import "Hash_Table";
 #import "String";
 
-#import "Json";
+#run {
+  JPM :: #import "JPM";
+
+  JPM.declare(.{
+    vendor  = "Electro_593",
+    name    = "Cast_JSON",
+    version = .{ 1, 0, 0 },
+
+    authors = .["Electro_593"],
+    repo = "https://github.com/Electro593/jai-json"
+  });
+
+  JPM.import(.{ "Electro_593", "JSON", .{ 1, 0, 0, .LATEST_MINOR } });
+}

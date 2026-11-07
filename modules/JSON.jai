@@ -868,3 +868,16 @@ has_next :: (json: *JSON, count := 1) -> bool {
 #import "Basic";
 #import "Hash_Table";
 #import "Bit_Operations";
+
+#run {
+  JPM :: #import "JPM";
+
+  JPM.declare(.{
+    name    = "JSON",
+    author  = "Electro_593",
+    version = .{ 1, 0, 0 },
+
+    authors = .["Electro_593"],
+    repo = "https://github.com/Electro593/jai-json"
+  });
+}
