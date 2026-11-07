@@ -877,6 +877,7 @@ has_next :: (json: *JSON, count := 1) -> bool {
     author  = "Electro_593",
     version = .{ 1, 0, 0 },
 
+    license = .UNLICENSE,
     authors = .["Electro_593"],
     repo = "https://github.com/Electro593/jai-json"
   });

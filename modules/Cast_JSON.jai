@@ -950,6 +950,7 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
     name    = "Cast_JSON",
     version = .{ 1, 0, 0 },
 
+    license = .UNLICENSE,
     authors = .["Electro_593"],
     repo = "https://github.com/Electro593/jai-json"
   });
