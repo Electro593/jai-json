@@ -961,5 +961,5 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 		version = .{ 1, 0, 0, .LATEST_MINOR }
 	});
 } else {
-	#insert "#import \"JSON\";";
+	#import "JSON";
 }
