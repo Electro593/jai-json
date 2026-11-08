@@ -1,6 +1,6 @@
 # Jai JSON
 
-Jai modules for managing JSON. Integrated with [JPM](https://github.com/Electro593/jpm).
+Jai modules for managing JSON. Integrated with [JAMM](https://github.com/Electro593/jamm).
 
 ## JSON
 

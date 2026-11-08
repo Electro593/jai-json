@@ -869,10 +869,10 @@ has_next :: (json: *JSON, count := 1) -> bool {
 #import "Hash_Table";
 #import "Bit_Operations";
 
-#if #exists(__JPM__) {
-	JPM :: #import "JPM";
+#if #exists(__JAMM__) {
+	JAMM :: #import "JAMM";
 
-	__JPM_DECLARATION__ :: JPM.Declare_Options.{
+	__JAMM_DECLARATION__ :: JAMM.Declare_Options.{
 		vendor  = "Electro_593",
 		name    = "JSON",
 		version = .{ 1, 0, 0 },

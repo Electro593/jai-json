@@ -942,10 +942,10 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 #import "Hash_Table";
 #import "String";
 
-#if #exists(__JPM__) {
-	JPM :: #import "JPM";
+#if #exists(__JAMM__) {
+	JAMM :: #import "JAMM";
 
-	__JPM_DECLARATION__ :: JPM.Declare_Options.{
+	__JAMM_DECLARATION__ :: JAMM.Declare_Options.{
 		vendor  = "Electro_593",
 		name    = "Cast_JSON",
 		version = .{ 1, 0, 0 },
@@ -955,7 +955,7 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 		repo = "https://github.com/Electro593/jai-json"
 	};
 
-	JPM.import(.{
+	JAMM.import(.{
 		vendor = "Electro_593",
 		name = "JSON",
 		version = .{ 1, 0, 0, .LATEST_MINOR }
