@@ -948,7 +948,7 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 	__JAMM_DECLARATION__ :: JAMM.Declare_Options.{
 		vendor  = "Electro_593",
 		name    = "Cast_JSON",
-		version = .{ 1, 0, 0 },
+		version = .{ 1, 0, 0, "", "" },
 
 		license = .UNLICENSE,
 		authors = .["Electro_593"],
@@ -958,7 +958,7 @@ json_log :: (format: string, args: ..Any) -> s64 #expand {
 	JAMM.import(.{
 		vendor = "Electro_593",
 		name = "JSON",
-		version = .{ 1, 0, 0, .LATEST_MINOR }
+		version = .{ 1, 0, 0, "", .LATEST_MINOR }
 	});
 } else {
 	#import "JSON";

@@ -875,7 +875,7 @@ has_next :: (json: *JSON, count := 1) -> bool {
 	__JAMM_DECLARATION__ :: JAMM.Declare_Options.{
 		vendor  = "Electro_593",
 		name    = "JSON",
-		version = .{ 1, 0, 0 },
+		version = .{ 1, 0, 0, "", "" },
 
 		license = .UNLICENSE,
 		authors = .["Electro_593"],
